@@ -25,9 +25,18 @@ export class ConstService {
         filter: true,
         sortable: true,
         floatingFilter: true,
+        // wrapText: true,
+        // autoHeight: true,
     };
     autoSizeStrategy:
         | SizeColumnsToFitGridStrategy
         | SizeColumnsToFitProvidedWidthStrategy
         | SizeColumnsToContentStrategy = { type: 'fitCellContents' }
+
+    PAY_CATEGORIES = [
+        { value: 'jsLearner', text:'Learn Javascript', category: "learner"},
+        { value: 'pyLearner', text:'Learn Python', category: "learner"},
+        { value: 'jsAuthoring', text:'Javascript Authoring Tool', category: "instructor"},
+        { value: 'pyAuthoring', text:'Python Authoring Tool', category: "instructor"}
+    ]
 }
